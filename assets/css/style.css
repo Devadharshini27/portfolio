@@ -32,7 +32,7 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
-    
+  
     
   }
 }
@@ -877,6 +877,26 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
+@media (max-width: 992px)
+{
+  .swiper-slide{
+    flex-shrink: 0;
+    width: 0;
+    height: 0;
+    position:inherit;
+    transition-property: transform;
+    visibility: hidden;
+  }
+  
+ .swiper-pagination{
+    position: relative;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+}
+  
 
 /*--------------------------------------------------------------
 # Contact
